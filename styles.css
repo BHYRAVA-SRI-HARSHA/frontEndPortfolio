@@ -1,0 +1,84 @@
+.animated-gradient-nav {
+  background: linear-gradient(90deg, #0d6efd, #6f42c1);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+}
+
+.animated-gradient-footer {
+  background: linear-gradient(90deg, #6f42c1, #0d6efd);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav.d-md-flex {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  #mobileMenu {
+    display: none;
+  }
+
+  #mobileMenu.show {
+    display: block;
+  }
+}
+
+.nav-link:hover {
+  color: 	#fff3cd !important;
+}
+
+/* for fixed top */
+.body {
+  padding-top: 56px;
+}
+
+/* to turn off hover on icons */
+.custom-icon-btn .icon-color {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.custom-icon-btn:hover .icon-color {
+  color: white !important;
+}
+
+.edu {
+  font-family: Poppins, sans-serif;
+}
+
+.clg {
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid-container > div > img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 150px 0px;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: center;
+  align-items: center; */
+  place-content: center;
+  text-align: center;
+  padding: 1rem 0;
+}
